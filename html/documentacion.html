@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Portal Soporte PJUD</title>
+</head>
+<body>
+    <!-- Cabecera y Menu-->
+    <div class="header">
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/software.html">Software</a></li>
+                    <li><a href="../html/drivers.html">Drivers</a></li>
+                    <li><a href="../html/documentacion.html">Documentacion</a></li>                                           
+                </ul>
+            <!-- <div class="img">
+                <img src="img/office.jpg" alt="">
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Contenedor Tarjetas-->
+    <div class="contenedor-tarjetas-documentacion">
+            <!-- Tarjetas Bloque 1-->
+        <div class="cards azul">
+            <div class="titulo">
+                <h2>Procedimientos Soporte PJUD</h2>
+            </div>
+            <div class="tarjetas-documentacion">
+                <div class="card blue">
+                    <h5>Caso 1: Solucionando Folio. </h5> 
+                        <ul>
+                            <li>Se revisa el requerimiento y se realiza el siguiente procedimiento:</li>
+                            <li>Se limpian temporales… etc. (explicar lo más claro posible la solución aplicada)</li>
+                            <li>Se realizan pruebas en paralelo con usuario NOMBRE: XXXXXXXX</li>
+                            <li>Equipo está operativo según revisión realizada por usuario</li>
+                        </ul>
+                       <p style="display: none;" id="copiarTexto1">Se revisa el requerimiento y se realiza el siguiente procedimiento:
+
+                            Se limpian temporales… etc. (explicar lo más claro posible la solución aplicada) 
+
+                            Se realizan pruebas en paralelo con usuario NOMBRE: XXXXXXXX 
+                            Equipo está operativo según revisión realizada por usuario.</p> 
+                        <button onclick="copiarAlPortapapeles('copiarTexto1')"><span class="material-symbols-outlined">
+                            content_copy
+                            </span> Copiar Reporte</button>
+                </div>
+
+                <div class="card blue">
+                    <h5>Caso 2: Solicitud de Spare</h5> 
+                    <p>Cuando se concurre a revisar un requerimiento y este tiene problemas de falla en hardware e imposibilita el uso del equipo</p>
+                    <p>Se deriva a <strong>SCO (Katherine Sanchez)</strong>  con la siguiente información comentada en sistema Mauweb</p>
+                    <p> SOLICITUD DE DESPACHO EN PROCESO DE GESTION</p>
+
+                    <ul>
+                        <li>Se revisa el requerimiento y se determina que equipo debe ser reemplazado por la siguiente falla: </li>
+                        <li>Detallar falla (murió disco, no prende etc…) </li>
+                        <li>Una vez llegado el nuevo back up se instalará lo antes posible. </li>
+                    </ul>
+                    <p style="display: none;" id="copiarTexto2">Se revisa el requerimiento y se determina que equipo debe ser reemplazado por la siguiente falla:
+                            
+                                        
+                        Detallar falla (murió disco, no prende etc…) 
+                                        
+                        Una vez llegado el nuevo back up se instalará lo antes posible.</p>
+                    <button onclick="copiarAlPortapapeles('copiarTexto2')"><span class="material-symbols-outlined">
+                        content_copy
+                    </span> Copiar Reporte</button>
+
+                    <p >Se debe cambiar el estado en planilla a <strong>“Despacho Solicitado”</strong>  y dejar como se muestra en ejemplo </p>
+                    <img src="../img/captura-google.jpg" alt="">
+                    <p>Recordar que una vez que llegue el spare, Uds. terminaran la atención para dar solución.</p>                   
+                </div>        
+            </div>
+        </div>
+        
+        <!-- Tarjetas Bloque 2-->
+        <div class="cards naranja">
+            <div class="titulo">
+                <h2>Manuales de Procedimientos</h2>
+            </div>
+                <div class="tarjetas-documentacion">
+
+                    <div class="card blue">
+                        <h5>Acceso a Planilla de Control</h5>
+                        <a href="https://docs.google.com/spreadsheets/d/1FIHRjUBXG62ii3xMgYFQ0lOwFbprXAD646a25brvmm8/edit#gid=1791785231" target="_blank"><i class="material-symbols-outlined">
+                            add_to_drive
+                        </i>  Planilla de Control</a>
+                        <p>De no tener acceso informar para gestionar los permisos.</p>
+                    </div>
+
+                    
+                    <div class="card orange">
+                        <h5>Manuales</h5>
+                        <ul>
+                            <li><a href="#">Procedimiento de Masterizacion Reforma Windows 10</a></li>
+                            <li><a href="#">Instructivo Configuracion Equipo PJUD4</a></li>
+                            <li><a href="#">Configuracion Cisco VPN</a></li>
+                            <li><a href="#">Configuracion Monito Web SRCEI</a></li>
+                            <li><a href="#">Configuracion Correo Zimbra VIP</a></li>
+                            <li><a href="#">Instructivo Instalacion Agente Kasperky</a></li>
+                        </ul>    
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/main.js"></script>
+</html>
